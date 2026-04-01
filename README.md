@@ -1,19 +1,25 @@
-E-commerce Sales Analytics Pipeline
+Ecommerce Sales Analytics Pipeline
 
-End-to-end data analytics project using Python, SQL, and Power BI to analyze e-commerce sales data and generate actionable business insights.
+Built an end-to-end analytics pipeline to transform messy e-commerce sales data into actionable business insights using Python, SQL, and Power BI.
 
 Project Overview
 
-This project presents a complete analytics workflow on a simulated e-commerce dataset designed to reflect real-world data challenges. It demonstrates the ability to generate, clean, analyze, and visualize transactional data, transforming raw inputs into decision-ready insights.
+This project demonstrates a complete data analytics workflow on a simulated e-commerce dataset designed to replicate real-world data challenges. It showcases the ability to clean, transform, analyze, and visualize raw transactional data, enabling data-driven decision-making.
 
-The dataset was intentionally engineered with inconsistencies such as missing values, duplicate records, incorrect data types, and categorical errors to simulate real business scenarios.
+The dataset was intentionally engineered with inconsistencies such as missing values, duplicate records, incorrect data types, and categorical errors to simulate practical business scenarios.
+
+Business Problem
+
+Businesses often deal with fragmented and inconsistent sales data, making it difficult to identify key revenue drivers, customer behavior patterns, and growth opportunities.
+
+This project addresses these challenges by building a structured analytics pipeline that converts unreliable raw data into meaningful insights for decision-making.
 
 Objective
 Simulate real-world transactional data with quality issues
 Perform data cleaning and transformation using Python
 Conduct analytical querying using SQL
 Build an interactive dashboard in Power BI
-Generate actionable insights to support business decision-making
+Generate actionable insights to support business decisions
 Tools & Technologies
 Python (Pandas, NumPy)
 Google Colab
@@ -38,7 +44,7 @@ Negative quantities
 Price outliers
 Data Generation & Preparation
 
-A synthetic dataset was generated using Python to simulate realistic e-commerce transactions. Randomization techniques were used to model customer behavior, product selection, and pricing variation.
+A synthetic dataset was generated using Python to simulate realistic e-commerce transactions. Randomization techniques were applied to model customer behavior, product selection, and pricing variation.
 
 Intentional inconsistencies were introduced to replicate real-world data issues and validate the robustness of the data cleaning process.
 
@@ -60,14 +66,13 @@ The cleaned dataset was exported for downstream analysis.
 
 SQL Analysis
 
-SQL was used to perform structured querying and simulate a production-level analytics workflow.
+SQL was used to simulate a production-level analytics workflow and perform structured querying.
 
-Key Operations
-Revenue and order aggregation
-Identification of high-value customers using subqueries
-Creation of reusable analytical views
-Customer ranking using window functions
-Feature engineering for reporting
+Advanced SQL Techniques Used
+Subqueries for customer segmentation
+Window functions (RANK) for customer ranking
+View creation for reusable analysis
+Feature engineering for reporting datasets
 Key Outputs
 Customer Summary (total orders, total spend)
 Category Revenue Analysis
@@ -78,19 +83,19 @@ Net revenue calculation
 Monthly and yearly time features
 Power BI Dashboard
 
-An interactive dashboard was built to visualize business performance and key trends.
+Power BI file is included in the /dashboard folder for full interactive exploration.
 
 Key Metrics
 Total Revenue: 3.01M
 Average Order Value: 2.70K
 Total Customers: 1115
 Total Quantity Sold: 6168
-Dashboard Insights
-Electronics category contributes the highest share of revenue
-Certain regions consistently outperform others, indicating demand concentration
-Revenue trends show periodic spikes, suggesting seasonal or campaign-driven growth
-Digital payment methods dominate transactions
-A small group of customers contributes significantly to overall revenue
+Key Insights
+Electronics contributes approximately 35–40% of total revenue, making it the primary revenue driver
+Top-performing regions generate a significantly higher share of revenue, indicating geographic demand concentration
+Revenue trends show periodic spikes, suggesting seasonal or campaign-driven growth patterns
+Digital payment methods (Credit Card and PayPal) dominate transactions, reflecting customer preference for convenience
+A small percentage of customers contributes a disproportionately large share of total revenue, indicating strong customer concentration
 Business Recommendations
 Allocate budget toward high-performing categories and regions
 Leverage time-based trends to optimize campaign timing
@@ -101,7 +106,7 @@ Project Structure
 ecommerce-sales-analytics-pipeline
  ┣ README.md
  ┣ data
- ┃ ┣ cleaned_ecommerce_sales.csv
+ ┃ ┗ cleaned_ecommerce_sales.csv
  ┣ python
  ┃ ┗ data_cleaning_eda.ipynb
  ┣ sql
@@ -118,12 +123,20 @@ Data Visualization (Power BI)
 
 This workflow reflects a real-world analytics pipeline used in business environments.
 
+Why This Project Matters
+
+This project simulates a real-world analytics scenario where raw data is unreliable and fragmented. It demonstrates how structured data workflows enable better decision-making across marketing, sales, and operations.
+
 Use of AI Tools
 
 AI tools were used selectively for debugging, improving workflow efficiency, and refining documentation. All analytical decisions, data modeling, and insights were developed independently.
 
+License
+
+This project is licensed under the MIT License.
+
 Conclusion
 
-This project demonstrates the ability to work with raw, unstructured data and transform it into meaningful insights using Python, SQL, and Power BI.
+This project demonstrates the ability to transform raw, messy data into actionable insights using Python, SQL, and Power BI.
 
 It reflects a strong understanding of the data analysis lifecycle and showcases readiness to contribute effectively in a data-driven role.
